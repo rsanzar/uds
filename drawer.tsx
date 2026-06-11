@@ -1,18 +1,185 @@
-make this code css modules instead of styled cmponents
-
 import React from "react";
-import styled from "styled-components";
+import styles from "./Frame.module.css";
 
-const StyledDisponiblespan = styled.span`
+export const Frame1010106802 = () => {
+  return (
+    <div className={styles.mainFrame}>
+      <div className={styles.templateTask}>
+        <div className={styles.frame1010106799}>
+          <div>
+            <span className={styles.disponibleSpan}>Disponible</span>
+          </div>
+          <button className={styles.buttons}>
+            <div className={styles.xClose}>
+              <div className={styles.icon} />
+            </div>
+          </button>
+        </div>
+      </div>
+      
+      <div className={styles.templateTask01}>
+        <div className={styles.horizontalTabList}>
+          <div className={styles.tabItem}>
+            <div className={styles.frame1010106805}>
+              <p className={styles.placeholder}>
+                <span className={styles.placeholderSpan}>Général</span>
+              </p>
+            </div>
+            <div className={styles.frame1010106808}>
+              <div className={styles.rectangle3} />
+            </div>
+          </div>
+          
+          <div className={styles.tabItem01}>
+            <div className={styles.frame101010680501}>
+              <p className={styles.placeholder01}>
+                <span className={styles.placeholder01Span}>Autorisations</span>
+              </p>
+              <div className={styles.neutralBadges}>
+                <p className={styles.label}>
+                  <span className={styles.labelSpan}>1</span>
+                </p>
+              </div>
+            </div>
+            <div className={styles.frame101010680801}>
+              <div className={styles.rectangle301} />
+            </div>
+          </div>
+          
+          <div className={styles.tabItem02}>
+            <div className={styles.frame101010680502}>
+              <p className={styles.placeholder02}>
+                <span className={styles.placeholder02Span}>Blocages</span>
+              </p>
+              <div className={styles.neutralBadges01}>
+                <p className={styles.label01}>
+                  <span className={styles.label01Span}>3</span>
+                </p>
+              </div>
+            </div>
+            <div className={styles.frame101010680802}>
+              <div className={styles.rectangle302} />
+            </div>
+          </div>
+          
+          <div className={styles.tabItem03}>
+            <div className={styles.frame101010680503}>
+              <p className={styles.placeholder03}>
+                <span className={styles.placeholder03Span}>Opérations en cours</span>
+              </p>
+              <div className={styles.neutralBadges02}>
+                <p className={styles.label02}>
+                  <span className={styles.label02Span}>20</span>
+                </p>
+              </div>
+            </div>
+            <div className={styles.frame101010680803}>
+              <div className={styles.rectangle303} />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className={styles.templateTask02}>
+        <div className={styles.balanceContainer}>
+          <div className={styles.balanceDetail}>
+            <div className={styles.tableCell}>
+              <p className={styles.text}>
+                <span className={styles.textSpan}>Solde</span>
+              </p>
+            </div>
+            <div className={styles.tableCell01}>
+              <div>
+                <span className={styles.text01Span}> 999 999 999 999,99</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.balanceDetail01}>
+            <div className={styles.tableCell02}>
+              <p className={styles.text02}>
+                <span className={styles.text02Span}>Autorisations</span>
+              </p>
+            </div>
+            <div className={styles.tableCell03}>
+              <div>
+                <span className={styles.text03Span}>12 500,00</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.balanceDetail02}>
+            <div className={styles.tableCell04}>
+              <p className={styles.text04}>
+                <span className={styles.text04Span}>Blocages</span>
+              </p>
+            </div>
+            <div className={styles.tableCell05}>
+              <div>
+                <span className={styles.text05Span}>75 000,00</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.balanceDetail03}>
+            <div className={styles.tableCell06}>
+              <p className={styles.text06}>
+                <span className={styles.text06Span}>Opérations en cours au crédit</span>
+              </p>
+            </div>
+            <div className={styles.tableCell07}>
+              <div>
+                <span className={styles.text07Span}>52 760,00</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.balanceDetail04}>
+            <div className={styles.tableCell08}>
+              <p className={styles.text08}>
+                <span className={styles.text08Span}>Opérations en cours au débit</span>
+              </p>
+            </div>
+            <div className={styles.tableCell09}>
+              <div>
+                <span className={styles.text09Span}>62 540,81</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.balanceDetail05}>
+            <div className={styles.tableCell10}>
+              <p className={styles.text10}>
+                <span className={styles.text10Span}>Disponible</span>
+              </p>
+            </div>
+            <div className={styles.tableCell11}>
+              <div>
+                <span className={styles.text11Span}> 999 999 902 719,18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+
+
+
+.disponibleSpan {
   color: var(--text-text-primary, #222220);
   font-size: 16px;
   font-family: Open Sans;
   font-weight: 700;
   line-height: 24px;
   word-wrap: break-word;
-`;
+}
 
-const StyledIcon = styled.div`
+.icon {
   width: 10px;
   height: 10px;
   left: 5px;
@@ -20,282 +187,282 @@ const StyledIcon = styled.div`
   position: absolute;
   outline: 1.50px var(--button-tertiary-btn-tertiary-icon, #5D5C59) solid;
   outline-offset: -0.75px;
-`;
+}
 
-const StyledPlaceholderspan = styled.span`
+.placeholderSpan {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledPlaceholder = styled.p`
+.placeholder {
   text-align: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledRectangle3 = styled.div`
+.rectangle3 {
   align-self: stretch;
   height: 2.50px;
   background: var(--tab-indicator, #FA5C35);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-`;
+}
 
-const StyledPlaceholder01span = styled.span`
+.placeholder01Span {
   color: var(--text-text-tertiary, #7D7C75);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledPlaceholder01 = styled.p`
+.placeholder01 {
   text-align: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledLabelspan = styled.span`
+.labelSpan {
   color: var(--text-text-primary, #222220);
   font-size: 12px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 16px;
   word-wrap: break-word;
-`;
+}
 
-const StyledLabel = styled.p`
+.label {
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledRectangle301 = styled.div`
+.rectangle301 {
   align-self: stretch;
   height: 2.50px;
   background: var(--tab-indicator, #FA5C35);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-`;
+}
 
-const StyledPlaceholder02span = styled.span`
+.placeholder02Span {
   color: var(--text-text-tertiary, #7D7C75);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledPlaceholder02 = styled.p`
+.placeholder02 {
   text-align: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledLabel01span = styled.span`
+.label01Span {
   color: var(--text-text-primary, #222220);
   font-size: 12px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 16px;
   word-wrap: break-word;
-`;
+}
 
-const StyledLabel01 = styled.p`
+.label01 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledRectangle302 = styled.div`
+.rectangle302 {
   align-self: stretch;
   height: 2.50px;
   background: var(--tab-indicator, #FA5C35);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-`;
+}
 
-const StyledPlaceholder03span = styled.span`
+.placeholder03Span {
   color: var(--text-text-tertiary, #7D7C75);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledPlaceholder03 = styled.p`
+.placeholder03 {
   text-align: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledLabel02span = styled.span`
+.label02Span {
   color: var(--text-text-primary, #222220);
   font-size: 12px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 16px;
   word-wrap: break-word;
-`;
+}
 
-const StyledLabel02 = styled.p`
+.label02 {
   justify-content: center;
   display: flex;
   flex-direction: column;
-`;
+}
 
-const StyledRectangle303 = styled.div`
+.rectangle303 {
   align-self: stretch;
   height: 2.50px;
   background: var(--tab-indicator, #FA5C35);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-`;
+}
 
-const StyledTextspan = styled.span`
+.textSpan {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText = styled.p`
+.text {
   flex: 1 1 0;
-`;
+}
 
-const StyledText01span = styled.span`
+.text01Span {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText02span = styled.span`
+.text02Span {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText02 = styled.p`
+.text02 {
   flex: 1 1 0;
-`;
+}
 
-const StyledText03span = styled.span`
+.text03Span {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText04span = styled.span`
+.text04Span {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText04 = styled.p`
+.text04 {
   flex: 1 1 0;
-`;
+}
 
-const StyledText05span = styled.span`
+.text05Span {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText06span = styled.span`
+.text06Span {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText06 = styled.p`
+.text06 {
   flex: 1 1 0;
-`;
+}
 
-const StyledText07span = styled.span`
+.text07Span {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText08span = styled.span`
+.text08Span {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 500;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText08 = styled.p`
+.text08 {
   flex: 1 1 0;
-`;
+}
 
-const StyledText09span = styled.span`
+.text09Span {
   color: var(--text-text-primary, #222220);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText10span = styled.span`
+.text10Span {
   color: var(--text-text-secondary, #5D5C59);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledText10 = styled.p`
+.text10 {
   flex: 1 1 0;
-`;
+}
 
-const StyledText11span = styled.span`
+.text11Span {
   color: var(--text-text-credit, #15803D);
   font-size: 14px;
   font-family: Open Sans;
   font-weight: 600;
   line-height: 20px;
   word-wrap: break-word;
-`;
+}
 
-const StyledFrame1010106805 = styled.div`
+.frame1010106805 {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 8px;
@@ -306,9 +473,9 @@ const StyledFrame1010106805 = styled.div`
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledNeutralbadges = styled.div`
+.neutralBadges {
   min-width: 24px;
   padding-left: 8px;
   padding-right: 8px;
@@ -324,9 +491,9 @@ const StyledNeutralbadges = styled.div`
   align-items: center;
   gap: 6px;
   display: flex;
-`;
+}
 
-const StyledNeutralbadges01 = styled.div`
+.neutralBadges01 {
   min-width: 24px;
   padding-left: 8px;
   padding-right: 8px;
@@ -342,9 +509,9 @@ const StyledNeutralbadges01 = styled.div`
   align-items: center;
   gap: 6px;
   display: flex;
-`;
+}
 
-const StyledNeutralbadges02 = styled.div`
+.neutralBadges02 {
   min-width: 24px;
   padding-left: 8px;
   padding-right: 8px;
@@ -360,9 +527,9 @@ const StyledNeutralbadges02 = styled.div`
   align-items: center;
   gap: 6px;
   display: flex;
-`;
+}
 
-const StyledTablecell = styled.div`
+.tableCell {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -370,9 +537,9 @@ const StyledTablecell = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell01 = styled.div`
+.tableCell01 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -381,9 +548,9 @@ const StyledTablecell01 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledTablecell02 = styled.div`
+.tableCell02 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -391,9 +558,9 @@ const StyledTablecell02 = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell03 = styled.div`
+.tableCell03 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -402,9 +569,9 @@ const StyledTablecell03 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledTablecell04 = styled.div`
+.tableCell04 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -412,9 +579,9 @@ const StyledTablecell04 = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell05 = styled.div`
+.tableCell05 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -423,9 +590,9 @@ const StyledTablecell05 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledTablecell06 = styled.div`
+.tableCell06 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -433,9 +600,9 @@ const StyledTablecell06 = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell07 = styled.div`
+.tableCell07 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -444,9 +611,9 @@ const StyledTablecell07 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledTablecell08 = styled.div`
+.tableCell08 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -454,9 +621,9 @@ const StyledTablecell08 = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell09 = styled.div`
+.tableCell09 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -465,18 +632,18 @@ const StyledTablecell09 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledTablecell10 = styled.div`
+.tableCell10 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
   justify-content: flex-start;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTablecell11 = styled.div`
+.tableCell11 {
   flex: 1 1 0;
   min-height: 48px;
   padding: 10px;
@@ -484,16 +651,16 @@ const StyledTablecell11 = styled.div`
   align-items: center;
   gap: 12px;
   display: flex;
-`;
+}
 
-const StyledXclose = styled.div`
+.xClose {
   width: 20px;
   height: 20px;
   position: relative;
   overflow: hidden;
-`;
+}
 
-const StyledFrame1010106808 = styled.div`
+.frame1010106808 {
   align-self: stretch;
   padding-left: 10px;
   padding-right: 10px;
@@ -502,9 +669,9 @@ const StyledFrame1010106808 = styled.div`
   align-items: center;
   gap: 10px;
   display: flex;
-`;
+}
 
-const StyledFrame101010680801 = styled.div`
+.frame101010680801 {
   width: 128px;
   padding-left: 10px;
   padding-right: 10px;
@@ -514,9 +681,9 @@ const StyledFrame101010680801 = styled.div`
   align-items: center;
   gap: 10px;
   display: flex;
-`;
+}
 
-const StyledFrame101010680802 = styled.div`
+.frame101010680802 {
   width: 128px;
   padding-left: 10px;
   padding-right: 10px;
@@ -526,9 +693,9 @@ const StyledFrame101010680802 = styled.div`
   align-items: center;
   gap: 10px;
   display: flex;
-`;
+}
 
-const StyledFrame101010680803 = styled.div`
+.frame101010680803 {
   width: 128px;
   padding-left: 10px;
   padding-right: 10px;
@@ -538,9 +705,9 @@ const StyledFrame101010680803 = styled.div`
   align-items: center;
   gap: 10px;
   display: flex;
-`;
+}
 
-const StyledFrame101010680501 = styled.div`
+.frame101010680501 {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 10px;
@@ -550,9 +717,9 @@ const StyledFrame101010680501 = styled.div`
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledFrame101010680502 = styled.div`
+.frame101010680502 {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 10px;
@@ -562,9 +729,9 @@ const StyledFrame101010680502 = styled.div`
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledFrame101010680503 = styled.div`
+.frame101010680503 {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 10px;
@@ -574,51 +741,51 @@ const StyledFrame101010680503 = styled.div`
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail = styled.div`
+.balanceDetail {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail01 = styled.div`
+.balanceDetail01 {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail02 = styled.div`
+.balanceDetail02 {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail03 = styled.div`
+.balanceDetail03 {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail04 = styled.div`
+.balanceDetail04 {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceDetail05 = styled.div`
+.balanceDetail05 {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledButtons = styled.button`
+.buttons {
   width: 36px;
   height: 36px;
   padding: 8px;
@@ -627,45 +794,45 @@ const StyledButtons = styled.button`
   justify-content: center;
   align-items: center;
   display: flex;
-`;
+}
 
-const StyledTabItem = styled.div`
+.tabItem {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledTabItem01 = styled.div`
+.tabItem01 {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledTabItem02 = styled.div`
+.tabItem02 {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledTabItem03 = styled.div`
+.tabItem03 {
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
   display: inline-flex;
-`;
+}
 
-const StyledBalanceContainer = styled.div`
+.balanceContainer {
   align-self: stretch;
   background: var(--background-bg-card, #FBFBF9);
   border-radius: 8px;
@@ -675,24 +842,24 @@ const StyledBalanceContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   display: flex;
-`;
+}
 
-const StyledFrame1010106799 = styled.div`
+.frame1010106799 {
   align-self: stretch;
   justify-content: space-between;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-const StyledHorizontaltablist = styled.div`
+.horizontalTabList {
   align-self: stretch;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
   display: inline-flex;
-`;
+}
 
-const StyledTemplateTask02 = styled.div`
+.templateTask02 {
   width: 100%;
   height: 810px;
   max-width: 768px;
@@ -705,9 +872,9 @@ const StyledTemplateTask02 = styled.div`
   align-items: flex-start;
   gap: 24px;
   display: flex;
-`;
+}
 
-const StyledTemplateTask = styled.div`
+.templateTask {
   width: 100%;
   height: 58px;
   max-width: 768px;
@@ -720,9 +887,9 @@ const StyledTemplateTask = styled.div`
   justify-content: center;
   align-items: flex-start;
   display: flex;
-`;
+}
 
-const StyledTemplateTask01 = styled.div`
+.templateTask01 {
   width: 100%;
   max-width: 768px;
   padding-top: 10px;
@@ -733,9 +900,9 @@ const StyledTemplateTask01 = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   display: flex;
-`;
+}
 
-const StyledFrame1010106802 = styled.div`
+.mainFrame {
   width: 672px;
   height: 926px;
   max-width: 768px;
@@ -746,118 +913,5 @@ const StyledFrame1010106802 = styled.div`
   justify-content: flex-start;
   align-items: center;
   display: inline-flex;
-`;
+}
 
-export const Frame1010106802 = () => {
-  return (
-    <StyledFrame1010106802>
-      <StyledTemplateTask>
-        <StyledFrame1010106799>
-          <div><StyledDisponiblespan>Disponible</StyledDisponiblespan></div>
-          <StyledButtons>
-            <StyledXclose>
-              <StyledIcon />
-            </StyledXclose>
-          </StyledButtons>
-        </StyledFrame1010106799>
-      </StyledTemplateTask>
-      <StyledTemplateTask01>
-        <StyledHorizontaltablist>
-          <StyledTabItem>
-            <StyledFrame1010106805>
-              <StyledPlaceholder><StyledPlaceholderspan>Général</StyledPlaceholderspan></StyledPlaceholder>
-            </StyledFrame1010106805>
-            <StyledFrame1010106808>
-              <StyledRectangle3 />
-            </StyledFrame1010106808>
-          </StyledTabItem>
-          <StyledTabItem01>
-            <StyledFrame101010680501>
-              <StyledPlaceholder01><StyledPlaceholder01span>Autorisations</StyledPlaceholder01span></StyledPlaceholder01>
-              <StyledNeutralbadges>
-                <StyledLabel><StyledLabelspan>1</StyledLabelspan></StyledLabel>
-              </StyledNeutralbadges>
-            </StyledFrame101010680501>
-            <StyledFrame101010680801>
-              <StyledRectangle301 />
-            </StyledFrame101010680801>
-          </StyledTabItem01>
-          <StyledTabItem02>
-            <StyledFrame101010680502>
-              <StyledPlaceholder02><StyledPlaceholder02span>Blocages</StyledPlaceholder02span></StyledPlaceholder02>
-              <StyledNeutralbadges01>
-                <StyledLabel01><StyledLabel01span>3</StyledLabel01span></StyledLabel01>
-              </StyledNeutralbadges01>
-            </StyledFrame101010680502>
-            <StyledFrame101010680802>
-              <StyledRectangle302 />
-            </StyledFrame101010680802>
-          </StyledTabItem02>
-          <StyledTabItem03>
-            <StyledFrame101010680503>
-              <StyledPlaceholder03><StyledPlaceholder03span>Opérations en cours</StyledPlaceholder03span></StyledPlaceholder03>
-              <StyledNeutralbadges02>
-                <StyledLabel02><StyledLabel02span>20</StyledLabel02span></StyledLabel02>
-              </StyledNeutralbadges02>
-            </StyledFrame101010680503>
-            <StyledFrame101010680803>
-              <StyledRectangle303 />
-            </StyledFrame101010680803>
-          </StyledTabItem03>
-        </StyledHorizontaltablist>
-      </StyledTemplateTask01>
-      <StyledTemplateTask02>
-        <StyledBalanceContainer>
-          <StyledBalanceDetail>
-            <StyledTablecell>
-              <StyledText><StyledTextspan>Solde</StyledTextspan></StyledText>
-            </StyledTablecell>
-            <StyledTablecell01>
-              <div><StyledText01span> 999 999 999 999,99</StyledText01span></div>
-            </StyledTablecell01>
-          </StyledBalanceDetail>
-          <StyledBalanceDetail01>
-            <StyledTablecell02>
-              <StyledText02><StyledText02span>Autorisations</StyledText02span></StyledText02>
-            </StyledTablecell02>
-            <StyledTablecell03>
-              <div><StyledText03span>12 500,00</StyledText03span></div>
-            </StyledTablecell03>
-          </StyledBalanceDetail01>
-          <StyledBalanceDetail02>
-            <StyledTablecell04>
-              <StyledText04><StyledText04span>Blocages</StyledText04span></StyledText04>
-            </StyledTablecell04>
-            <StyledTablecell05>
-              <div><StyledText05span>75 000,00</StyledText05span></div>
-            </StyledTablecell05>
-          </StyledBalanceDetail02>
-          <StyledBalanceDetail03>
-            <StyledTablecell06>
-              <StyledText06><StyledText06span>Opérations en cours au crédit</StyledText06span></StyledText06>
-            </StyledTablecell06>
-            <StyledTablecell07>
-              <div><StyledText07span>52 760,00</StyledText07span></div>
-            </StyledTablecell07>
-          </StyledBalanceDetail03>
-          <StyledBalanceDetail04>
-            <StyledTablecell08>
-              <StyledText08><StyledText08span>Opérations en cours au débit</StyledText08span></StyledText08>
-            </StyledTablecell08>
-            <StyledTablecell09>
-              <div><StyledText09span>62 540,81</StyledText09span></div>
-            </StyledTablecell09>
-          </StyledBalanceDetail04>
-          <StyledBalanceDetail05>
-            <StyledTablecell10>
-              <StyledText10><StyledText10span>Disponible</StyledText10span></StyledText10>
-            </StyledTablecell10>
-            <StyledTablecell11>
-              <div><StyledText11span> 999 999 902 719,18</StyledText11span></div>
-            </StyledTablecell11>
-          </StyledBalanceDetail05>
-        </StyledBalanceContainer>
-      </StyledTemplateTask02>
-    </StyledFrame1010106802>
-  );
-};
